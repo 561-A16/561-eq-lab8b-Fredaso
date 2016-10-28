@@ -1,0 +1,12 @@
+FROM microsoft/dotnet:latest
+
+EXPOSE 5000
+ENV ASPNETCORE_URLS http://+:5000
+
+COPY src /src
+
+WORKDIR /src/webapp
+
+RUN dotnet restore
+
+CMD ["dotnet", "run"]
