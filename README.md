@@ -14,9 +14,3 @@
   - Télévereser  de l'image **webapp:release** sur Docker Hub
     - Créer des variables d'environnement sur travis pour votre id et mot de passe de docker hub
   - Le déploiement sur *digital ocean*
-
-## Détails
-  - ssh u1438779@152.203.33.172
-    - IP du serveur: 159.203.33.172
-    - Username: u1438779
-    - Mdp: utilisateur2016
