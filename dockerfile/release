@@ -3,10 +3,8 @@ FROM microsoft/dotnet:latest
 EXPOSE 5000
 ENV ASPNETCORE_URLS http://+:5000
 
-COPY src /src
+COPY publish /src 
 
-WORKDIR /src/webapp
+WORKDIR /src
 
-RUN dotnet restore
-
-CMD ["dotnet", "run"]
+CMD ["dotnet", "webapp.dll"]
