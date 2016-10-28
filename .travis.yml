@@ -21,7 +21,7 @@ script:
 
 after_success:
     - if [ "$TRAVIS_BRANCH" == "master" ]; then
-        docker build -t fredaso/webapp:autoLatest -f dockerfile/release .;
+        docker build -t fredaso/webapp:latest -f dockerfile/release .;
         docker login -u="$DOCKER_HUB_ID" -p="$DOCKER_HUB_PASSWORD";
-        docker push fredaso/webapp:autoLatest;
+        docker push fredaso/webapp:latest;
         fi
