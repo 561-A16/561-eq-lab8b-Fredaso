@@ -24,4 +24,3 @@ after_success:
         docker build -t fredaso/webapp:autoLatest -f dockerfile/release .
         docker login -u="$DOCKER_HUB_ID"" -p="$DOCKER_HUB_PASSWORD";
         docker push fredaso/webapp:autoLatest;
-        fi
